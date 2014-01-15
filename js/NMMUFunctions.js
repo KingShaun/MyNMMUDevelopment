@@ -1182,7 +1182,7 @@ function handleGetAdverts() {
 
         $.each(AdvertsEntries, function (i, v) {
             s += '<li>';
-            s += '<a href="#PageAdvertContent" class="AdvertContentLink" data-transition="slide" data-entryid="' + i + '"><p>';
+            s += '<a href="#PageAdvertContent" class="AdvertContentLink" data-entryid="' + i + '"><p>';
             s += v.adsubject;
             s += '</p></a>';
             s += '</li>';
@@ -1253,7 +1253,7 @@ function handleAdvertSearch() {
                 //now draw the list
                 $.each(SearchAdvertsEntries, function (i, v) {
                     s += '<li>';
-                    s += '<a href="#PageSearchAdvertContent" class="SearchAdvertContentLink" data-transition="slide" data-entryid="' + i + '">';
+                    s += '<a href="#PageSearchAdvertContent" class="SearchAdvertContentLink" data-entryid="' + i + '">';
                     s += '<p>' + v.adsubject + '</p>';
                     s += '</a>';
                     s += '</li>';
@@ -1330,7 +1330,7 @@ function handleGetMyAdverts() {
             //now draw the list
             $.each(EditAdvertsEntries, function (i, v) {
                 s += '<li>';
-                s += '<a href="#PageEditAdvertContent" class="EditAdvertContentLink" data-transition="slide" data-entryid="' + i + '">';
+                s += '<a href="#PageEditAdvertContent" class="EditAdvertContentLink" data-entryid="' + i + '">';
                 s += '<p>' + v.adsubject + '</p>';
                 s += '</a>';
                 s += '</li>';
@@ -1794,7 +1794,7 @@ function GetMyModules(username, password) {
             //now draw the list
             $.each(MyModulesEntries, function (i, v) {
                 s += '<li>';
-                s += '<a href="#PageMyModulesContent" class="ModuleContentLink" data-transition="slide" data-entryid="' + i + '">';
+                s += '<a href="#PageMyModulesContent" class="ModuleContentLink" data-entryid="' + i + '">';
                 //s += '<p>' + v.modulename + '</p>';
                 s += v.modulename;
                 s += '</a>';
