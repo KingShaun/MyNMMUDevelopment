@@ -30,11 +30,14 @@
 
     <script type="text/javascript">
         $(document).on("mobileinit", function () {
+            $.extend($.mobile, {
+                defaultPageTransition: 'none'
+            });
             // Setting #container div as a jqm pageContainer
             //$.mobile.pageContainer = $('#container');
 
             // Setting default page transition to slide
-            $.mobile.defaultPageTransition = 'none';
+            //$.mobile.defaultPageTransition = 'none';
             //$.mobile.defaultPageTransition = 'fade';
             //$.mobile.hashListeningEnabled = false;
 
