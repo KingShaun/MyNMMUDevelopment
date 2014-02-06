@@ -823,10 +823,14 @@
 
         <div data-role="content">
 
-            <ul data-role="listview" data-inset="true" class="ListviewNMMUNoBold">
+            <ul data-role="listview" data-divider-theme="c" data-inset="true" class="ListviewNMMUNoBold">
                 <li data-icon="navigation">
                     <a href="#PageGetDirections">Get Directions</a>
                 </li>
+                <li data-icon="location">
+                    <a href="#" onclick='window.open("http://maps.nmmu.ac.za", "_blank", "location=yes");'>NMMU Maps</a>
+                </li>
+                <li data-role="list-divider">Quick maps</li>
                 <li data-icon="location">
                     <a href="#PageNCMap">North Campus</a>
                 </li>
