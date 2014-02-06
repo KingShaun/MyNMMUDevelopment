@@ -652,6 +652,7 @@ function onDeviceReady() {
                 break;
             default: alert("An unknown error occurred.");
                 break;
+        }
     }
 
     function locSuccess(position) {
