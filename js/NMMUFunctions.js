@@ -640,9 +640,18 @@ function onDeviceReady() {
 
     function locError(error) {
         // initialize map with a static predefined latitude, longitude
-        alert('code: ' + error.code + '\n' +
-                      'message: ' + error.message + '\n');
-        initialize(59.3426606750, 18.0736160278);
+        //alert('code: ' + error.code + '\n' +
+        //              'message: ' + error.message + '\n');
+        //initialize(59.3426606750, 18.0736160278);
+        switch (error.code) {
+            case error.PERMISSION_DENIED: alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE: alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT: alert("The request to get user location timed out.");
+                break;
+            default: alert("An unknown error occurred.");
+                break;
     }
 
     function locSuccess(position) {
