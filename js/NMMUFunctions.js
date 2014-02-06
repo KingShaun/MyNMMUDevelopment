@@ -38,9 +38,6 @@
 //
 function onDeviceReady() {
 
-
-    alert('init');
-
     //Stores news entries
     var NewsEntries = [];
     var SelectedNewsEntry = "";

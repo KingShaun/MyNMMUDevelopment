@@ -20,10 +20,10 @@
     <!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
-    -->
+    
     <feature name="http://api.phonegap.com/1.0/device"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation" required="false"/>
-    <feature name="http://api.phonegap.com/1.0/camera" required="false"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation" android:required="false"/>
+    <feature name="http://api.phonegap.com/1.0/camera" android:required="false"/>-->
 
   
     <!--
