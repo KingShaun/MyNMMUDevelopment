@@ -4,10 +4,7 @@
 <head>
     <title>NMMU Mobile Application</title>
     <meta charset="utf-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--For custom theming uncomment both line below.
     <link rel="stylesheet" href="themes/NMMUTheme.min.css" />
@@ -33,15 +30,11 @@
 
     <script type="text/javascript">
         $(document).on("mobileinit", function () {
-            $.extend($.mobile, {
-                defaultPageTransition: 'slide'
-            });
             // Setting #container div as a jqm pageContainer
             //$.mobile.pageContainer = $('#container');
 
             // Setting default page transition to slide
-            //$.mobile.defaultPageTransition = 'none';
-            //$.mobile.defaultPageTransition = 'fade';
+            $.mobile.defaultPageTransition = 'fade';
             //$.mobile.hashListeningEnabled = false;
 
             //$.mobile.loadingMessageTheme = 'd';
@@ -62,68 +55,62 @@
 
     <!-- Home -->
     <div data-role="page" id="PageHome">
-        <!--<div style="text-align: center; background-color: #003058; padding-top: 5px">
-            <img src="images/bannerNMMULogo.png" alt="NMMU Logo" />
-        </div>-->
-
-        <div data-role="header" style="text-align: center;">
+        <div style="text-align: center; background-color: #003058; padding-top: 5px">
             <img src="images/bannerNMMULogo.png" alt="NMMU Logo" />
         </div>
 
-            <div data-role="content">
+        <div data-role="content">
 
-                <ul data-role="listview" data-inset="true" class="ListviewNMMUNoBold">
-                    <li>
-                        <a href="#PageAboutUs">About us</a>
-                    </li>
-                    <li>
-                        <a href="#PageUsefulContacts">Useful contacts</a>
-                    </li>
-                    <li>
-                        <a href="#PageNews">News</a>
-                    </li>
-                    <li>
-                        <a href="#PageEvents">Events</a>
-                    </li>
-                    <li>
-                        <a href="#PageMaps">Maps</a>
-                    </li>
-                    <li>
-                        <a href="#PageMyJourney">My journey (study search)</a>
-                    </li>
-                    <li>
-                        <a href="#PageCampusHealth">Campus Health</a>
-                    </li>
-                    <li>
-                        <a href="#PageSports">Madibaz Sport</a>
-                    </li>
-                    <li>
-                        <a href="#PageSocialLinks">Social links</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick='window.open("http://m.nmmu.ac.za/dates", "_blank", "location=yes");'>Important dates</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick='window.open("http://m.nmmu.ac.za/faq", "_blank", "location=yes");'>FAQ</a>
-                    </li>
-                </ul>
-            </div>
+            <ul data-role="listview" data-inset="true" class="ListviewNMMUNoBold">
+                <li>
+                    <a href="#PageAboutUs">About us</a>
+                    <!--<a onclick="javascript:application.navigateTo('index.html#PageAboutUs');">About us</a>-->
+                </li>
+                <li>
+                    <a href="#PageUsefulContacts">Useful contacts</a>
+                </li>
+                <li>
+                    <a href="#PageNews">News</a>
+                </li>
+                <li>
+                    <a href="#PageEvents">Events</a>
+                </li>
+                <li>
+                    <a href="#PageMaps">Maps</a>
+                </li>
+                <li>
+                    <a href="#PageMyJourney">My journey (study search)</a>
+                </li>
+                <li>
+                    <a href="#PageCampusHealth">Campus Health</a>
+                </li>
+                <li>
+                    <a href="#PageSports">Madibaz Sport</a>
+                </li>
+                <li>
+                    <a href="#PageSocialLinks">Social links</a>
+                </li>
+                <li>
+                    <a href="#" onclick='window.open("http://m.nmmu.ac.za/dates", "_blank", "location=yes");'>Important dates</a>
+                </li>
+                <li>
+                    <a href="#" onclick='window.open("http://m.nmmu.ac.za/faq", "_blank", "location=yes");'>FAQ</a>
+                </li>
+            </ul>
+        </div>
 
-            <div data-role="footer" data-position="fixed">
-                <div data-role="controlgroup" data-type="horizontal" style="text-align: center;">
-                    <a href="#PageLogin" class="ui-btn ui-btn-inline ui-icon-user ui-btn-icon-left ui-shadow">My NMMU</a>
-                    <a href="#PageEmergency" class="ui-btn ui-btn-inline ui-icon-alert ui-btn-icon-left ui-shadow">Emergency</a>
-                </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+                <a href="#PageLogin" class="ui-btn ui-btn-inline ui-icon-user ui-btn-icon-left ui-shadow">My NMMU</a>
+                <a href="#PageEmergency" class="ui-btn ui-btn-inline ui-icon-alert ui-btn-icon-left ui-shadow">Emergency</a>
             </div>
         </div>
+    </div>
     <!-- End Home -->
 
     <!-- Logged in home -->
     <div data-role="page" id="PageLoggedInHome">
-        <!--<div style="text-align: center; background-color: #003058; padding-top: 5px">
-            <img src="images/bannerNMMULogo.png" alt="NMMU Logo" />
-        </div>-->
-        <div data-role="header" style="text-align: center;">
+        <div style="text-align: center; background-color: #003058; padding-top: 5px">
             <img src="images/bannerNMMULogo.png" alt="NMMU Logo" />
         </div>
         <div data-role="content">
@@ -752,7 +739,7 @@
     <div data-role="page" id="PageAboutUs">
 
         <div data-role="header">
-            <a href="#PageHome" data-rel="back" data-icon="back">Back</a><img class="NMMUHeaderImage" src="images/LogoWhite.png" alt="Logo" /><h1>About us</h1>
+            <a href="#PageHome" data-rel="back" data-icon="back" onclick="decCount();">Back</a><img class="NMMUHeaderImage" src="images/LogoWhite.png" alt="Logo" /><h1>About us</h1>
         </div>
 
         <div data-role="content">
@@ -826,14 +813,10 @@
 
         <div data-role="content">
 
-            <ul data-role="listview" data-divider-theme="c" data-inset="true" class="ListviewNMMUNoBold">
+            <ul data-role="listview" data-inset="true" class="ListviewNMMUNoBold">
                 <li data-icon="navigation">
                     <a href="#PageGetDirections">Get Directions</a>
                 </li>
-                <li data-icon="location">
-                    <a href="#" onclick='window.open("http://maps.nmmu.ac.za", "_blank", "location=yes");'>NMMU Maps</a>
-                </li>
-                <li data-role="list-divider">Quick maps</li>
                 <li data-icon="location">
                     <a href="#PageNCMap">North Campus</a>
                 </li>
